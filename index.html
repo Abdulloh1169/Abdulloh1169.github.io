@@ -2,12 +2,209 @@
 <html>
 <head>
 	<title>hello</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-</head>
-<body>
-  <h1> HELLO !</h1
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
+	<!--Google fonts-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+	
+	<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
+	<!--locale style-->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+
+<body>
+
+	<!-- NAVIGATION-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container-fluid">
+	    <a class="navbar-brand">PORTFOLIO</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	      <ul class="navbar-nav ms-auto">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#myself">About</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#projects">Projects</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#contact">Contact</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+
+	<!--topbar-->
+	<section id="topbar" class="topbar">
+		<div class="container-fluid top-image">
+			<div id="topbar-text">HELLO</div>
+		</div>
+	</section>
+
+	<sction class="resume" id="resume">
+		<div class="container py-4">
+			<div class="row">
+				<div class="section-title py-4">
+					<h2>Myself</h2>
+				</div>
+				<div class="col-md-6 summary">
+					<p>
+						My full name is Abdulloh Habibullayev. I am a self learner of 
+						python(especially django) and web developping. Moreover I am a 3rd
+						year IT department student of Turin Politechnicl University in Tashkent.
+					</p>
+				</div>
+				<div class="aboutme col-md-6">
+					<strong>Full name</strong>: Abdulloh Habibullayev<br>
+					<strong>Birthday</strong>: 17 may 2001<br>
+					<strong>City</strong>: Tashkent, Uzbekistan<br>
+					<strong>Languages</strong>: English, Uzbek<br>
+				</div>
+		    </div>
+		</div>
+	</sction>
+
+
+	<!--about myself-->
+	<section class="myself" id="myself">
+		<div class="container d-flex py-4">
+			<div class="row">
+				<div class="col-md-6">
+					<div>
+						<div class="section-title">
+							<h2>Study</h2>
+						</div>
+						<ul class="ps-3">
+							<li><i class="bi bi-check-circle"></i>
+								 School 193
+							</li>
+							<li><i class="bi bi-check-circle"></i>
+								 Academic lyceum under TTPU
+							</li>
+							<li><i class="bi bi-check-circle"></i>
+								 Turin Politechnical University in Tashkent
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="section-title">
+						<h2>Skills</h2>
+					</div>
+					<div class="row skills">
+						<div class="col-sm-6">
+							<div class="ps-3"><i class="bi bi-bookmark-check"></i> HTML</div>
+							<div class="ps-3"><i class="bi bi-bookmark-check"></i> CSS</div>
+							<div class="ps-3"><i class="bi bi-bookmark-check"></i> BOOTSTRAP</div>
+							<div class="ps-3"><i class="bi bi-bookmark-check"></i> DJANGO</div>
+						</div>
+						<div class="col-sm-6">
+							<progress value="70" max="100">70%</progress>
+							<progress value="60" max="100">60%</progress>
+							<progress value="50" max="100">50%</progress>
+							<progress value="85" max="100">85%</progress>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--projects-->
+	<section class="projects" id="projects">
+		<div class="container py-4">
+			<div class="section-title">
+				<h2>Projects</h2>
+			</div>
+			<div class="row">
+				<!-- project 1-->
+				<div class="col-md-6 image">
+					<a href="https://github.com/Abdulloh1169/suitshop-website">
+						<img class="img-fluid" src="./suit-website.jpg"></img>
+					</a>
+				</div>
+				<div class="col-md-6 description">
+					<div>
+						That is multi language shop market where you can find products' detail 
+						and price. Also there is an information about news and different events
+						in shop.
+					</div>
+				</div>
+
+				<!-- project 2-->
+				<div class="col-md-6 description order-md-0 order-1">
+					<div>
+						Simple website for schools. It contains news, information about
+						teachers and school's gallery.
+					</div>
+				</div>
+				<div class="col-md-6 image order-md-1 order-0">
+					<a href="http://abdulloh1169.pythonanywhere.com/">
+						<img class="img-fluid" src="./school-website.png"></img>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="section-title">
+				<h2>Contact</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+		            <div class="info mt-4">
+		                <h4>Location:</h4>
+		                <p>Tashkent, Uzbekistan</p>
+		            </div>
+		        </div>
+	            <div class="col-lg-4 mt-4">
+	                <div class="info">
+	                  <h4>Email:</h4>
+	                  <p><a href="mailto:ahabibullayev2001@gmail.com">ahabibullayev2001@gmail.com</a></p>
+	                </div>
+	            </div>
+	            <div class="col-lg-4">
+	                <div class="info w-100 mt-4">
+	                    <h4>Call:</h4>
+	                    <p><a href="tel:+998993238708">+998(99) 323-87-08</a></p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+
+	<!--footer-->
+	<footer class="text-center text-white">
+	  <!-- Grid container -->
+	  <div class="container p-3">
+	  	<a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/__abdu110h__/" role="button"
+	        ><i class="bi bi-instagram"></i
+	      ></a>
+
+	      <a class="btn btn-outline-light btn-floating m-1" href="https://t.me/ahabibullayev" role="button"
+	        ><i class="bi-telegram"></i
+	      ></a>
+
+	      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Abdulloh1169" role="button"
+	        ><i class="bi bi-github"></i
+	      ></a>
+	  </div>
+	  <!-- Grid container -->
+
+	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
